@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverCook - Liên hệ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-title">
+                <img src="logo.png" alt="OverCook Logo" class="logo-img">
+                <h1>OverCook</h1>
+            </div>
+            <div class="menu-icon">☰</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipe.html">Recipe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <button class="mode-toggle" aria-label="Chuyển đổi chế độ sáng/tối" title="Chuyển đổi chế độ sáng/tối">
+                            <img class="mode-icon" src="dm.png" alt="Chế độ tối">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-section">
+        <h1>Liên hệ với chúng tôi</h1>
+        <div class="contact-container">
+            <div class="contact-form" id="report-error-form">
+                <h2>Báo lỗi</h2>
+                <form id="error-form">
+                    <label for="error-name">Họ và tên *</label>
+                    <input type="text" id="error-name" name="name" required>
+                    <label for="error-email">Email *</label>
+                    <input type="email" id="error-email" name="email" required>
+                    <label for="recipe-dish">Tên lỗi *</label>
+                    <input type="text" id="recipe-dish" name="dish" required>
+                    <label for="error-message">Mô tả lỗi *</label>
+                    <textarea id="error-message" name="message" rows="5" required></textarea>
+                    <button type="submit">Gửi</button>
+                </form>
+                <p class="form-message" id="error-form-message"></p>
+            </div>
+            <div class="contact-form" id="contribute-recipe-form">
+                <h2>Đóng góp món ăn</h2>
+                <form id="recipe-form">
+                    <label for="recipe-name">Họ và tên *</label>
+                    <input type="text" id="recipe-name" name="name" required>
+                    <label for="recipe-email">Email *</label>
+                    <input type="email" id="recipe-email" name="email" required>
+                    <label for="recipe-dish">Tên món ăn *</label>
+                    <input type="text" id="recipe-dish" name="dish" required>
+                    <label for="recipe-message">Mô tả món ăn *</label>
+                    <textarea id="recipe-message" name="message" rows="5" required></textarea>
+                    <button type="submit">Gửi</button>
+                </form>
+                <p class="form-message" id="recipe-form-message"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p>© 2025 Bài tập cuối kì môn lập trình web - Sinh viên: Đặng Trần Hạo Nam - Mã sinh viên: 24IT170</p>
+                <p>Trường Đại học: Vietnam - Korea University of Information and Communication Technology (VKU)</p>
+                <p>Giáo viên hướng dẫn: Đỗ Công Đức</p>
+                <p>Website chia sẻ công thức nấu ăn</p>
+            </div>
+            <div>
+                <img src="vku.png" alt="Logo VKU" style="width: 100px; height: auto;">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

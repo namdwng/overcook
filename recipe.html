@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OverCook - Công thức nấu ăn</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-title">
+                <img src="logo.png" alt="OverCook Logo" class="logo-img">
+                <h1>OverCook</h1>
+            </div>
+            <div class="menu-icon">☰</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="recipe.html">Recipe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <button class="mode-toggle" aria-label="Chuyển đổi chế độ sáng/tối" title="Chuyển đổi chế độ sáng/tối">
+                            <img class="mode-icon" src="dm.png" alt="Chế độ tối">
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="Recipe">
+        <h1>Công thức nấu ăn</h1>
+        <div class="recipe-controls">
+            <select id="category-filter">
+                <option value="all">Tất cả danh mục</option>
+                <option value="Việt Nam">Việt Nam</option>
+                <option value="Nhật Bản">Nhật Bản</option>
+                <option value="Ấn Độ">Ấn Độ</option>
+                <option value="Thái Lan">Thái Lan</option>
+                <option value="Tây Ban Nha">Tây Ban Nha</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="Thổ Nhĩ Kỳ">Thổ Nhĩ Kỳ</option>
+                <option value="Pháp">Pháp</option>
+            </select>
+        </div>
+        <div class="recipe-section">
+            <div class="recipe-card" data-category="Việt Nam" >
+                <img src="m1.jpg" alt="Phở bò">
+                <h2>Phở bò</h2>
+                <p>Hương vị truyền thống đậm đà với nước dùng trong, bánh phở mềm và thịt bò tái thơm ngon.</p>
+                <a href="phobo.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Việt Nam" >
+                <img src="m2.jpg" alt="Bún chả">
+                <h2>Bún chả</h2>
+                <p>Thịt nướng thơm, nước mắm chua ngọt ăn kèm bún và rau sống tươi mát hấp dẫn.</p>
+                <a href="buncha.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Việt Nam" >
+                <img src="m3.jpg" alt="Canh chua cá lóc">
+                <h2>Canh chua cá lóc</h2>
+                <p>Vị chua thanh từ me, cá lóc ngọt thịt cùng tạo nên món canh hài hòa thơm ngon.</p>
+                <a href="canhchua.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Việt Nam">
+                <img src="m4.jpg" alt="Nem Rán (Chả Giò)">
+                <h2>Nem Rán (Chả Giò)</h2>
+                <p>Vỏ giòn rụm, nhân thịt và rau củ hoà quyện, chấm nước mắm chua ngọt hấp dẫn.</p>
+                <a href="nemran.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Việt Nam">
+                <img src="m5.jpg" alt="Xôi Mặn">
+                <h2>Xôi Mặn</h2>
+                <p>Xôi dẻo thơm ăn kèm chả lụa, lạp xưởng, trứng, hành phi và nước tương đậm đà.</p>
+                <a href="xoiman.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Nhật Bản">
+                <img src="m6.jpg" alt="Sushi">
+                <h2>Sushi</h2>
+                <p>Cơm dẻo Nhật Bản cuộn với hải sản tươi, rong biển, và chút wasabi cay nồng.</p>
+                <a href="sushi.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Mexico">
+                <img src="m7.jpg" alt="Tacos">
+                <h2>Tacos</h2>
+                <p>Vỏ bánh ngô giòn, nhân thịt bò nướng, sốt salsa tươi và phô mai tan chảy.</p>
+                <a href="tacos.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Ấn Độ">
+                <img src="m8.jpg" alt="Gà Bơ">
+                <h2>Gà Bơ</h2>
+                <p>Gà ướp gia vị Ấn Độ, nấu trong sốt cà chua béo ngậy, thơm mùi bơ và kem.</p>
+                <a href="gabo.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Tây Ban Nha">
+                <img src="m9.jpg" alt="Cơm Paella">
+                <h2>Cơm Paella</h2>
+                <p>Cơm Tây Ban Nha thơm nghệ tây, kết hợp hải sản, gà và xúc xích chorizo.</p>
+                <a href="paella.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Thái Lan">
+                <img src="m10.jpg" alt="Pad Thai">
+                <h2>Pad Thai</h2>
+                <p>Mì gạo xào với tôm, đậu phộng, giá đỗ và nước mắm chua ngọt kiểu Thái.</p>
+                <a href="padthai.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Pháp">
+                <img src="m11.jpg" alt="Bánh Sừng Bò">
+                <h2>Bánh Sừng Bò</h2>
+                <p>Bánh sừng bò Pháp giòn rụm, béo ngậy với lớp vỏ tầng tầng và nhân bơ thơm.</p>
+                <a href="banhsungbo.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Brazil">
+                <img src="m12.jpg" alt="Món Hầm Feijoada">
+                <h2>Món Hầm Feijoada</h2>
+                <p>Món hầm Brazil đậm đà với đậu đen, thịt lợn và xúc xích, ăn kèm cơm trắng.</p>
+                <a href="Feijoada.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Canada">
+                <img src="m13.jpg" alt="Khoai Tây Poutine">
+                <h2>Khoai Tây Poutine</h2>
+                <p>Khoai tây chiên Canada phủ phô mai tan chảy và nước sốt thịt béo ngậy, thơm ngon.</p>
+                <a href="khoai.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Ấn Độ">
+                <img src="m14.jpg" alt="Cơm Biryani">
+                <h2>Cơm Biryani</h2>
+                <p>Cơm Ấn Độ thơm lừng với gia vị, thịt gà hoặc cừu, kèm sữa chua mát lạnh.</p>
+                <a href="biryani.html">Xem chi tiết</a>
+            </div>
+            <div class="recipe-card" data-category="Thổ Nhĩ Kỳ">
+                <img src="m15.jpg" alt="Bánh Baklava">
+                <h2>Bánh Baklava</h2>
+                <p>Bánh ngọt Thổ Nhĩ Kỳ với lớp bánh phyllo giòn, nhân hạt và siro mật ong.</p>
+                <a href="baklava.html">Xem chi tiết</a>
+            </div>
+        </div>
+        <div class="pagination">
+            <button class="page-btn" data-page="1">1</button>
+            <button class="page-btn" data-page="2">2</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <p>© 2025 Bài tập cuối kì môn lập trình web - Sinh viên: Đặng Trần Hạo Nam - Mã sinh viên: 24IT170</p>
+                <p>Trường Đại học: Vietnam - Korea University of Information and Communication Technology (VKU)</p>
+                <p>Giáo viên hướng dẫn: Đỗ Công Đức</p>
+                <p>Website chia sẻ công thức nấu ăn</p>
+            </div>
+            <div>
+                <img src="vku.png" alt="Logo VKU" style="width: 100px; height: auto;">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
