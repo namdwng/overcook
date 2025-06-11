@@ -20,21 +20,21 @@ document.addEventListener('DOMContentLoaded', () => {
     // Theme handling
     if (localStorage.getItem('theme') === 'dark') {
         document.body.classList.add('dark-mode');
-        modeIcon.src = '../IMG/lm.png';
+        modeIcon.src = 'lm.png';
         modeIcon.alt = 'Chế độ sáng';
     } else {
-        modeIcon.src = '../IMG/dm.png';
+        modeIcon.src = 'dm.png';
         modeIcon.alt = 'Chế độ tối';
     }
 
     modeToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
         if (document.body.classList.contains('dark-mode')) {
-            modeIcon.src = '../IMG/lm.png';
+            modeIcon.src = 'lm.png';
             modeIcon.alt = 'Chế độ sáng';
             localStorage.setItem('theme', 'dark');
         } else {
-            modeIcon.src = '../IMG/dm.png';
+            modeIcon.src = 'dm.png';
             modeIcon.alt = 'Chế độ tối';
             localStorage.setItem('theme', 'light');
         }
